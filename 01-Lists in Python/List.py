@@ -50,38 +50,37 @@ so the output will be
 
 """
 
-
-mylist=[2,4,6,8,-1,-2,-3]
+mylist = [2, 4, 6, 8, -1, -2, -3]
 print(mylist)
 
 
-
-mylist2=[0]*5
+mylist2 = [0] * 5
 print(mylist2)
 
-new_list=mylist+mylist2
+new_list = mylist + mylist2
 
-print(new_list) #concatenated list [2, 4, 6, 8, -1, -2, -3, 0, 0, 0, 0, 0]
+print(new_list)  # concatenated list [2, 4, 6, 8, -1, -2, -3, 0, 0, 0, 0, 0]
 
 
+# slicing concept
 
-#slicing concept
-
-mylist3=[1,2,3,4,5,6,7,8,9]
-a=mylist3[0:5]# 5th index will be excluded
+mylist3 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+a = mylist3[0:5]  # 5th index will be excluded
 print(a)
-#so output will be depand on ,  since last index is excluded
-#1,2,3,4,5
+# so output will be depand on ,  since last index is excluded
+# 1,2,3,4,5
 
-a=mylist3[::2]
-print(f"{mylist3} after slicing and inserting the third optional argument of the step {a}")
+a = mylist3[::2]
+print(
+    f"{mylist3} after slicing and inserting the third optional argument of the step {a}"
+)
 
-#copying the list
-list_org=["banana","cherry","apple"]
+# copying the list
+list_org = ["banana", "cherry", "apple"]
 
-list_cpy=list_org #both list now refers to same list in memory
+list_cpy = list_org  # both list now refers to same list in memory
 
-# strage thing happen here if i modify the copy then it also modify the original list too 
+# strage thing happen here if i modify the copy then it also modify the original list too
 print("before assigning values")
 print(list_org)
 print(list_cpy)
@@ -89,24 +88,25 @@ print(list_cpy)
 list_cpy.append("lemon")
 print("after assigning values")
 print(list_cpy)
-print(list_org) # it would also contains the lemon in it which is strange 
+print(list_org)  # it would also contains the lemon in it which is strange
 
 
 # so for copying the list in real case we have to do this
 
 
-list_cpy=list_org.copy()
-print("copied list",list_cpy)
+list_cpy = list_org.copy()
+print("copied list", list_cpy)
 
 list_cpy.append("Hello")
-print(f"original list {list_org} is not modified when hello is entered in the copied list here is the copied list with the hello is appended {list_cpy}")
+print(
+    f"original list {list_org} is not modified when hello is entered in the copied list here is the copied list with the hello is appended {list_cpy}"
+)
 
 
+# list comprehension
 
-#list comprehension 
+example_list = [1, 2, 3, 4, 5, 6]
 
-example_list=[1,2,3,4,5,6]
-
-b=[i*i for i in example_list]
+b = [i * i for i in example_list]
 
 print(b)
