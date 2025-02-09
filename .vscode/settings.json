@@ -1,0 +1,12 @@
+{
+    "editor.fontFamily": "Ubuntu Mono",
+    "editor.codeLensFontFamily": "Ubuntu Mono",
+    "editor.inlayHints.fontFamily": "Ubuntu Mono",
+    "editor.inlineSuggest.fontFamily": "Ubuntu Mono",
+    "debug.console.fontFamily": "Ubuntu Mono",
+    "scm.inputFontFamily": "Ubuntu Mono",
+    "terminal.integrated.fontFamily": "Ubuntu Mono",
+    "notebook.markup.fontFamily": "Ubuntu Mono",
+    "notebook.output.fontFamily": "Ubuntu Mono",
+    "chat.editor.fontFamily": "Ubuntu Mono"
+}
