@@ -1,11 +1,11 @@
 """
-lists are ordered, mutable , allows duplicate methods 
+lists are ordered, mutable , allows duplicate methods
 
 .sort() method sorts the list but changes the original list
 
 .sorted(<your_List>) sorts the list and returns the sorted list which you can store but dont modify the original list
 
-.pop() method returns and remove the last element from the list 
+.pop() method returns and remove the last element from the list
 
 .remove(<takes_element>) method is used to remove any specific element from the array
 
@@ -18,24 +18,24 @@ third argument is the optional index which is step which mean it reads and inser
 we dont use assigning  for copying the lists
 since they both refers to the same list in memory so in change in one list will also be reflecting in the other list as well which is not to be considered as the copied event
 
-so for copying the lists in python we use the .copy method 
+so for copying the lists in python we use the .copy method
 
-for eg. 
-list_cpy=list(list_org) 
+for eg.
+list_cpy=list(list_org)
 
-or 
+or
 
 list_cpy=list_org.copy()
 
-or use the slicing 
+or use the slicing
 
-list_cpy=list_org[:]  
+list_cpy=list_org[:]
 
 from starting to the last index
 
 
 
-list comprehension is the fast and elegant method to create the new list from the existing list here is the way to do that 
+list comprehension is the fast and elegant method to create the new list from the existing list here is the way to do that
 
 
 example_list=[1,2,3,4,5,6]
@@ -44,7 +44,7 @@ b=[i*i for i in example_list]
 
 print(b)
 
-so the output will be 
+so the output will be
 
 [1, 4, 9, 16, 25, 36]
 

@@ -1,15 +1,15 @@
-#use single or double quotes
+# use single or double quotes
 
-my_string="Hello world"
+my_string = "Hello world"
 
-my_string='Hello world'
+my_string = "Hello world"
 
-my_string="I'm a Geek"
+my_string = "I'm a Geek"
 print(my_string)
 
 # escaping backslash
 my_string = 'I\' m  a "Geek"'
-my_string = 'I\' m a \'Geek\''
+my_string = "I' m a 'Geek'"
 print(my_string)
 
 # triple quotes for multiline strings
@@ -25,24 +25,24 @@ print(my_string)
 """Access Characters and substring"""
 
 
-my_string="Hello world"
+my_string = "Hello world"
 
-#get character by referring  to index
+# get character by referring  to index
 
-b=my_string[0]
+b = my_string[0]
 
 print(b)
 
 # Substrings with slicing
-b = my_string[1:3] # Note that the last index is not included
+b = my_string[1:3]  # Note that the last index is not included
 print(b)
-b = my_string[:5] # from beginning
+b = my_string[:5]  # from beginning
 print(b)
-b = my_string[6:] # until the end
+b = my_string[6:]  # until the end
 print(b)
-b = my_string[::2] # start to end with every second item
+b = my_string[::2]  # start to end with every second item
 print(b)
-b = my_string[::-1] # reverse the string with a negative step:
+b = my_string[::-1]  # reverse the string with a negative step:
 print(b)
 
 
@@ -50,7 +50,7 @@ print(b)
 # concat strings with +
 greeting = "Hello"
 name = "Tom"
-sentence = greeting + ' ' + name
+sentence = greeting + " " + name
 print(sentence)
 
 
@@ -87,15 +87,17 @@ print(new_message)
 
 # split the string into a list
 my_string = "how are you doing"
-a = my_string.split() # default argument is " "
+a = my_string.split()  # default argument is " "
 print(a)
 my_string = "one,two,three"
 a = my_string.split(",")
 print(a)
 
 # join elements of a list into a string
-my_list = ['How', 'are', 'you', 'doing']
-a = ' '.join(my_list) # the given string is the separator, e.g. ' ' between each argument
+my_list = ["How", "are", "you", "doing"]
+a = " ".join(
+    my_list
+)  # the given string is the separator, e.g. ' ' between each argument
 print(a)
 
 """f-Strings"""
