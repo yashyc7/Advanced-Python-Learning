@@ -1,4 +1,4 @@
-a  = input("enter any value between 5 and 9 ")
+a = input("enter any value between 5 and 9 ")
 
 if type(a) == int:
     if a < 5 or a > 9:
